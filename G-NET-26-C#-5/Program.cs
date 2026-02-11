@@ -1,10 +1,318 @@
-﻿namespace G_NET_26_C__5
+﻿using System.Diagnostics;
+
+namespace G_NET_26_C__5
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            
+            #region ENUMS
+            #region Q1
+            /*
+             Q1 : Day of the Week
+                Create an enum called DayOfWeek with values: Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday, Friday.
+                Then write a program that:
+                •	Asks the user to enter a day number (0–6).
+                •	Converts it to the enum and prints the day name.
+                •	Uses a switch statement to print whether it's a "Workday" or a "Weekend".
+            */
+
+            //Console.Write("Enter a day number (1-7): ");
+            //int dayNumber = int.Parse(Console.ReadLine());
+
+            //DayOfWeek day = (DayOfWeek)(dayNumber - 1);
+            //Console.WriteLine($"Day: {day}");
+
+            //switch (day)
+            //{
+            //    case DayOfWeek.Friday:
+            //    case DayOfWeek.Saturday:
+            //        Console.WriteLine("It's the Weekend");
+            //        break;
+            //    case DayOfWeek.Sunday:
+            //    case DayOfWeek.Monday:
+            //    case DayOfWeek.Tuesday:
+            //    case DayOfWeek.Wednesday:
+            //    case DayOfWeek.Thursday:
+            //        Console.WriteLine("It's a Workday");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Invalid day number");
+            //        break;
+            //}
+            #endregion
+            #endregion
+
+            #region Arrays
+            #region Q1
+            /*Q1 : Array Statistics
+                Write a program that:
+                •	Asks the user for the size of an integer array.
+                •	Reads the elements from the user.
+                •	Prints: the sum, the average, the maximum value, the minimum value, and the array in reverse order.
+            */
+            //Console.Write("Enter array size: ");
+            //int size = int.Parse(Console.ReadLine());
+            //int[] numbers = new int[size];
+
+            //for (int i = 0; i < size; i++)
+            //{
+            //    Console.Write($"Enter element [{i}]: ");
+            //    numbers[i] = int.Parse(Console.ReadLine());
+            //}
+            //Console.WriteLine();
+
+            //int sum = 0;
+            //for (int i = 0; i < numbers.Length; i++)
+            //{
+            //    sum += numbers[i];
+            //}
+            //Console.WriteLine($"Sum = {sum}");
+
+            //double average = (double)sum / numbers.Length;
+            //Console.WriteLine($"Average = {average}");
+
+            //int max = numbers[0];
+            //for (int i = 1; i < numbers.Length; i++)
+            //{
+            //    if (numbers[i] > max)
+            //    {
+            //        max = numbers[i];
+            //    }
+            //}
+            //Console.WriteLine($"Max = {max}");
+
+            //int min = numbers[0];
+            //for (int i = 1; i < numbers.Length; i++)
+            //{
+            //    if (numbers[i] < min)
+            //    {
+            //        min = numbers[i];
+            //    }
+            //}
+            //Console.WriteLine($"Min = {min}");
+
+            //Console.Write("Reverse = ");
+            //for (int i = numbers.Length - 1; i >= 0; i--)
+            //{
+            //    Console.Write(numbers[i]);
+            //    if (i > 0)
+            //    {
+            //        Console.Write(", ");
+            //    }
+            //}
+            //Console.WriteLine();
+            #endregion
+
+            #region Q2
+            /*
+             Q2 : Student Grades Matrix
+             You have 3 students, each with 4 subject 
+             You have 3 students, each with 4 subject grades. Store them in a 2D array.
+             Write a program that:
+             -	Reads grades from the user into a [3, 4] array.
+             -	Prints each student's average grade.
+             -	Prints the overall class averal 
+            */
+
+            //int[,] grades = new int[3, 4];
+
+            //for (int student = 0; student < 3; student++)
+            //{
+            //    Console.WriteLine($"Enter grades for Student {student + 1}:");
+            //    for (int subject = 0; subject < 4; subject++)
+            //    {
+            //        Console.Write($"  Subject {subject + 1}: ");
+            //        grades[student, subject] = int.Parse(Console.ReadLine());
+            //    }
+            //}
+            //Console.WriteLine(); 
+
+            //double totalSum = 0;
+            //for (int student = 0; student < 3; student++)
+            //{
+            //    int studentSum = 0;
+            //    for (int subject = 0; subject < 4; subject++)
+            //    {
+            //        studentSum += grades[student, subject];
+            //    }
+            //    double studentAverage = (double)studentSum / 4;
+            //    Console.WriteLine($"Student {student + 1} Average = {studentAverage}");
+            //    totalSum += studentSum;
+            //}
+
+            //double classAverage = totalSum / (3 * 4);
+            //Console.WriteLine($"Overall Class Average = {classAverage}");
+            #endregion
+            #endregion
+
+            #region Functions (Methods)
+            #region Q1
+            /*
+             Q1 : Basic Calculator Functions
+               Write four static methods: Add, Subtract, Multiply, Divide.
+               Each takes two double parameters and returns a double result.
+               In Main, ask the user for two numbers and an operation (+, -, *, /), then call the appropriate method and display the result.
+             */
+            //Console.Write("Enter first number: ");
+            //double number1 = double.Parse(Console.ReadLine());
+            //Console.Write("Enter second number: ");
+            //double number2 = double.Parse(Console.ReadLine());
+            //Console.Write("Enter operation (+, -, *, /): ");
+            //string operation = Console.ReadLine();
+            //double result = 0;
+
+            //switch (operation)
+            //{
+            //    case "+":
+            //        result = Add(number1, number2);
+            //        Console.WriteLine($"Result: {number1} + {number2} = {result}");
+            //        break;
+            //    case "-":
+            //        result = Subtract(number1, number2);
+            //        Console.WriteLine($"Result: {number1} - {number2} = {result}");
+            //        break;
+            //    case "*":
+            //        result = Multiply(number1, number2);
+            //        Console.WriteLine($"Result: {number1} * {number2} = {result}");
+            //        break;
+            //    case "/":
+            //        result = Divide(number1, number2);
+            //        Console.WriteLine($"Result: {number1} / {number2} = {result}");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Error: Invalid operation! Please use +, -, *, or /");
+            //        break;
+            //}
+            #endregion
+
+            #region Q2
+            /*
+             Q2 : Circle Calculator with out
+                Write a method CalculateCircle that takes a double radius as input and returns both the area and circumference using out parameters.
+                Call the method from Main, then print both results.
+             */
+
+            //Console.Write("Enter the radius of the circle: ");
+            //double radius = double.Parse(Console.ReadLine());
+
+            //double area;
+            //double circumference;
+
+            //CalculateCircle(radius, out area, out circumference);
+            //Console.WriteLine($"Area = {area}");
+            //Console.WriteLine($"Circumference = {circumference}");
+
+            #endregion
+            #endregion
+
+            #region  Student Grade Manager
+            /*
+             Build a mini Student Grade Manager that combines all three topics.
+                Requirements:
+                •	Enum: Create a Grade enum with values: A, B, C, D, F.
+                •	Array: Use an int[] array to store scores for 5 students.
+                •	Functions: Write the following methods:
+                  a) Method To GetGrade returns the grade enum based on score (A >= 90, B >= 80, C >= 70, D >= 60, F < 60).
+                  b) Method To CalculateAverage returns the average of all scores.
+                  c) Method To GetMinMax finds the min and max scores using out.
+                The program should:
+                •	Read 5 student scores from the user.
+                •	Print each student's score and corresponding letter grade.
+                •	Print the class average, minimum, and maximum scores.
+             */
+           
+            //int[] scores = new int[5];
+
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    Console.Write($"Enter score for Student {i + 1}: ");
+            //    scores[i] = int.Parse(Console.ReadLine());
+            //}
+            //Console.WriteLine();
+
+            //for (int i = 0; i < scores.Length; i++)
+            //{
+            //    Grade letterGrade = GetGrade(scores[i]);
+            //    Console.WriteLine($"Student {i + 1}: {scores[i]} -> Grade: {letterGrade}");
+            //}
+            //Console.WriteLine();
+
+            //double average = CalculateAverage(scores);
+            //Console.WriteLine($"Average: {average}");
+
+            //int minScore, maxScore;
+            //GetMinMax(scores, out minScore, out maxScore);
+            //Console.WriteLine($"Highest Score: {maxScore}");
+            //Console.WriteLine($"Lowest Score: {minScore}");
+
+            #endregion
         }
+        //static double Add(double num1, double num2)
+        //{
+        //    return num1 + num2;
+        //}
+        //static double Subtract(double num1, double num2)
+        //{
+        //    return num1 - num2;
+        //}
+
+        //static double Multiply(double num1, double num2)
+        //{
+        //    return num1 * num2;
+        //}
+
+        //static double Divide(double num1, double num2)
+        //{
+        //    if (num2 == 0)
+        //    {
+        //        Console.WriteLine("Error: Cannot divide by zero!");
+        //        return 0;
+        //    }
+        //    return num1 / num2;
+        //}
+        //static void CalculateCircle(double radius, out double area, out double circumference)
+        //{
+        //    area = 3.14 * radius * radius;
+        //    circumference = 2 * 3.14 * radius;
+        //}
+
+        //static Grade GetGrade(int score)
+        //{
+        //    if (score >= 90)
+        //        return Grade.A;
+        //    else if (score >= 80)
+        //        return Grade.B;
+        //    else if (score >= 70)
+        //        return Grade.C;
+        //    else if (score >= 60)
+        //        return Grade.D;
+        //    else
+        //        return Grade.F;
+        //}
+
+        //static double CalculateAverage(int[] scores)
+        //{
+        //    int sum = 0;
+        //    for (int i = 0; i < scores.Length; i++)
+        //    {
+        //        sum += scores[i];
+        //    }
+        //    return (double)sum / scores.Length;
+        //}
+
+        //static void GetMinMax(int[] scores, out int min, out int max)
+        //{
+        //    min = scores[0];
+        //    max = scores[0];
+
+        //    for (int i = 1; i < scores.Length; i++)
+        //    {
+        //        if (scores[i] < min)
+        //            min = scores[i];
+        //        if (scores[i] > max)
+        //            max = scores[i];
+        //    }
+        //}
     }
 }
