@@ -1,4 +1,6 @@
-﻿namespace G_NET_26_C__5
+﻿using System.Diagnostics;
+
+namespace G_NET_26_C__5
 {
     internal class Program
     {
@@ -190,7 +192,7 @@
                 Write a method CalculateCircle that takes a double radius as input and returns both the area and circumference using out parameters.
                 Call the method from Main, then print both results.
              */
-            
+
             //Console.Write("Enter the radius of the circle: ");
             //double radius = double.Parse(Console.ReadLine());
 
@@ -202,6 +204,48 @@
             //Console.WriteLine($"Circumference = {circumference}");
 
             #endregion
+            #endregion
+
+            #region  Student Grade Manager
+            /*
+             Build a mini Student Grade Manager that combines all three topics.
+                Requirements:
+                •	Enum: Create a Grade enum with values: A, B, C, D, F.
+                •	Array: Use an int[] array to store scores for 5 students.
+                •	Functions: Write the following methods:
+                  a) Method To GetGrade returns the grade enum based on score (A >= 90, B >= 80, C >= 70, D >= 60, F < 60).
+                  b) Method To CalculateAverage returns the average of all scores.
+                  c) Method To GetMinMax finds the min and max scores using out.
+                The program should:
+                •	Read 5 student scores from the user.
+                •	Print each student's score and corresponding letter grade.
+                •	Print the class average, minimum, and maximum scores.
+             */
+           
+            //int[] scores = new int[5];
+
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    Console.Write($"Enter score for Student {i + 1}: ");
+            //    scores[i] = int.Parse(Console.ReadLine());
+            //}
+            //Console.WriteLine();
+
+            //for (int i = 0; i < scores.Length; i++)
+            //{
+            //    Grade letterGrade = GetGrade(scores[i]);
+            //    Console.WriteLine($"Student {i + 1}: {scores[i]} -> Grade: {letterGrade}");
+            //}
+            //Console.WriteLine();
+
+            //double average = CalculateAverage(scores);
+            //Console.WriteLine($"Average: {average}");
+
+            //int minScore, maxScore;
+            //GetMinMax(scores, out minScore, out maxScore);
+            //Console.WriteLine($"Highest Score: {maxScore}");
+            //Console.WriteLine($"Lowest Score: {minScore}");
+
             #endregion
         }
         //static double Add(double num1, double num2)
@@ -231,6 +275,44 @@
         //{
         //    area = 3.14 * radius * radius;
         //    circumference = 2 * 3.14 * radius;
+        //}
+
+        //static Grade GetGrade(int score)
+        //{
+        //    if (score >= 90)
+        //        return Grade.A;
+        //    else if (score >= 80)
+        //        return Grade.B;
+        //    else if (score >= 70)
+        //        return Grade.C;
+        //    else if (score >= 60)
+        //        return Grade.D;
+        //    else
+        //        return Grade.F;
+        //}
+
+        //static double CalculateAverage(int[] scores)
+        //{
+        //    int sum = 0;
+        //    for (int i = 0; i < scores.Length; i++)
+        //    {
+        //        sum += scores[i];
+        //    }
+        //    return (double)sum / scores.Length;
+        //}
+
+        //static void GetMinMax(int[] scores, out int min, out int max)
+        //{
+        //    min = scores[0];
+        //    max = scores[0];
+
+        //    for (int i = 1; i < scores.Length; i++)
+        //    {
+        //        if (scores[i] < min)
+        //            min = scores[i];
+        //        if (scores[i] > max)
+        //            max = scores[i];
+        //    }
         //}
     }
 }
