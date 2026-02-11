@@ -183,6 +183,25 @@
             //        break;
             //}
             #endregion
+
+            #region Q2
+            /*
+             Q2 : Circle Calculator with out
+                Write a method CalculateCircle that takes a double radius as input and returns both the area and circumference using out parameters.
+                Call the method from Main, then print both results.
+             */
+            
+            //Console.Write("Enter the radius of the circle: ");
+            //double radius = double.Parse(Console.ReadLine());
+
+            //double area;
+            //double circumference;
+
+            //CalculateCircle(radius, out area, out circumference);
+            //Console.WriteLine($"Area = {area}");
+            //Console.WriteLine($"Circumference = {circumference}");
+
+            #endregion
             #endregion
         }
         //static double Add(double num1, double num2)
@@ -207,6 +226,11 @@
         //        return 0;
         //    }
         //    return num1 / num2;
+        //}
+        //static void CalculateCircle(double radius, out double area, out double circumference)
+        //{
+        //    area = 3.14 * radius * radius;
+        //    circumference = 2 * 3.14 * radius;
         //}
     }
 }
