@@ -101,6 +101,47 @@
             //}
             //Console.WriteLine();
             #endregion
+
+            #region Q2
+            /*
+             Q2 : Student Grades Matrix
+             You have 3 students, each with 4 subject 
+             You have 3 students, each with 4 subject grades. Store them in a 2D array.
+             Write a program that:
+             -	Reads grades from the user into a [3, 4] array.
+             -	Prints each student's average grade.
+             -	Prints the overall class averal 
+            */
+            
+            //int[,] grades = new int[3, 4];
+
+            //for (int student = 0; student < 3; student++)
+            //{
+            //    Console.WriteLine($"Enter grades for Student {student + 1}:");
+            //    for (int subject = 0; subject < 4; subject++)
+            //    {
+            //        Console.Write($"  Subject {subject + 1}: ");
+            //        grades[student, subject] = int.Parse(Console.ReadLine());
+            //    }
+            //}
+            //Console.WriteLine(); 
+
+            //double totalSum = 0;
+            //for (int student = 0; student < 3; student++)
+            //{
+            //    int studentSum = 0;
+            //    for (int subject = 0; subject < 4; subject++)
+            //    {
+            //        studentSum += grades[student, subject];
+            //    }
+            //    double studentAverage = (double)studentSum / 4;
+            //    Console.WriteLine($"Student {student + 1} Average = {studentAverage}");
+            //    totalSum += studentSum;
+            //}
+
+            //double classAverage = totalSum / (3 * 4);
+            //Console.WriteLine($"Overall Class Average = {classAverage}");
+            #endregion
             #endregion
         }
     }
