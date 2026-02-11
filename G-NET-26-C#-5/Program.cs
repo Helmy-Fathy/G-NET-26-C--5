@@ -40,6 +40,68 @@
             //}
             #endregion
             #endregion
+
+            #region Arrays
+            #region Q1
+            /*Q1 : Array Statistics
+                Write a program that:
+                •	Asks the user for the size of an integer array.
+                •	Reads the elements from the user.
+                •	Prints: the sum, the average, the maximum value, the minimum value, and the array in reverse order.
+            */
+            //Console.Write("Enter array size: ");
+            //int size = int.Parse(Console.ReadLine());
+            //int[] numbers = new int[size];
+
+            //for (int i = 0; i < size; i++)
+            //{
+            //    Console.Write($"Enter element [{i}]: ");
+            //    numbers[i] = int.Parse(Console.ReadLine());
+            //}
+            //Console.WriteLine();
+
+            //int sum = 0;
+            //for (int i = 0; i < numbers.Length; i++)
+            //{
+            //    sum += numbers[i];
+            //}
+            //Console.WriteLine($"Sum = {sum}");
+
+            //double average = (double)sum / numbers.Length;
+            //Console.WriteLine($"Average = {average}");
+
+            //int max = numbers[0];
+            //for (int i = 1; i < numbers.Length; i++)
+            //{
+            //    if (numbers[i] > max)
+            //    {
+            //        max = numbers[i];
+            //    }
+            //}
+            //Console.WriteLine($"Max = {max}");
+
+            //int min = numbers[0];
+            //for (int i = 1; i < numbers.Length; i++)
+            //{
+            //    if (numbers[i] < min)
+            //    {
+            //        min = numbers[i];
+            //    }
+            //}
+            //Console.WriteLine($"Min = {min}");
+
+            //Console.Write("Reverse = ");
+            //for (int i = numbers.Length - 1; i >= 0; i--)
+            //{
+            //    Console.Write(numbers[i]);
+            //    if (i > 0)
+            //    {
+            //        Console.Write(", ");
+            //    }
+            //}
+            //Console.WriteLine();
+            #endregion
+            #endregion
         }
     }
 }
