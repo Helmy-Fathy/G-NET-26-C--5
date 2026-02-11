@@ -112,7 +112,7 @@
              -	Prints each student's average grade.
              -	Prints the overall class averal 
             */
-            
+
             //int[,] grades = new int[3, 4];
 
             //for (int student = 0; student < 3; student++)
@@ -143,6 +143,70 @@
             //Console.WriteLine($"Overall Class Average = {classAverage}");
             #endregion
             #endregion
+
+            #region Functions (Methods)
+            #region Q1
+            /*
+             Q1 : Basic Calculator Functions
+               Write four static methods: Add, Subtract, Multiply, Divide.
+               Each takes two double parameters and returns a double result.
+               In Main, ask the user for two numbers and an operation (+, -, *, /), then call the appropriate method and display the result.
+             */
+            //Console.Write("Enter first number: ");
+            //double number1 = double.Parse(Console.ReadLine());
+            //Console.Write("Enter second number: ");
+            //double number2 = double.Parse(Console.ReadLine());
+            //Console.Write("Enter operation (+, -, *, /): ");
+            //string operation = Console.ReadLine();
+            //double result = 0;
+
+            //switch (operation)
+            //{
+            //    case "+":
+            //        result = Add(number1, number2);
+            //        Console.WriteLine($"Result: {number1} + {number2} = {result}");
+            //        break;
+            //    case "-":
+            //        result = Subtract(number1, number2);
+            //        Console.WriteLine($"Result: {number1} - {number2} = {result}");
+            //        break;
+            //    case "*":
+            //        result = Multiply(number1, number2);
+            //        Console.WriteLine($"Result: {number1} * {number2} = {result}");
+            //        break;
+            //    case "/":
+            //        result = Divide(number1, number2);
+            //        Console.WriteLine($"Result: {number1} / {number2} = {result}");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Error: Invalid operation! Please use +, -, *, or /");
+            //        break;
+            //}
+            #endregion
+            #endregion
         }
+        //static double Add(double num1, double num2)
+        //{
+        //    return num1 + num2;
+        //}
+        //static double Subtract(double num1, double num2)
+        //{
+        //    return num1 - num2;
+        //}
+
+        //static double Multiply(double num1, double num2)
+        //{
+        //    return num1 * num2;
+        //}
+
+        //static double Divide(double num1, double num2)
+        //{
+        //    if (num2 == 0)
+        //    {
+        //        Console.WriteLine("Error: Cannot divide by zero!");
+        //        return 0;
+        //    }
+        //    return num1 / num2;
+        //}
     }
 }
